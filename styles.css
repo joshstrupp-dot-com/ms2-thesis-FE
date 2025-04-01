@@ -38,3 +38,40 @@ body {
 #visualization2 canvas {
   cursor: pointer;
 }
+
+/* Visualization 3 - Stacked Area Chart */
+#visualization3 .area {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+#visualization3 .area:hover {
+  opacity: 0.9;
+}
+
+#visualization3 .x-axis path,
+#visualization3 .y-axis path,
+#visualization3 .x-axis line,
+#visualization3 .y-axis line {
+  stroke: #888;
+  stroke-width: 1px;
+}
+
+#visualization3 .x-axis text,
+#visualization3 .y-axis text {
+  font-size: 12px;
+  fill: #555;
+}
+
+#visualization3 .x-label,
+#visualization3 .y-label {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #333;
+}
+
+#visualization3 .tooltip {
+  font-size: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
