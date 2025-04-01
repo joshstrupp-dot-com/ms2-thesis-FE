@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive D3.js Visualizations</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- THREE.js libraries for 3D visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+  </head>
+  <body>
+    <h1>D3.js Visualizations</h1>
+
+    <div class="visualization-container">
+      <h2>Visualization 1</h2>
+      <div id="visualization1" class="viz"></div>
+    </div>
+
+    <div class="visualization-container">
+      <h2>Visualization 2</h2>
+      <div id="visualization2" class="viz"></div>
+    </div>
+
+    <div class="visualization-container">
+      <h2>Visualization 3</h2>
+      <div id="visualization3" class="viz"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="visualization1.js"></script>
+    <script src="visualization2.js"></script>
+    <script src="visualization3.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

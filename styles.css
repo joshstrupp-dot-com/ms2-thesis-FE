@@ -1,0 +1,40 @@
+/* Basic styling for the visualization containers */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.visualization-container {
+  margin-bottom: 5vh;
+}
+
+.viz {
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  position: relative; /* Added for absolute positioning of child elements */
+}
+
+/* SVG styling will be applied via D3 */
+
+/* 3D Visualization Styles */
+.axis-label {
+  pointer-events: none;
+  text-shadow: 0px 0px 2px #ffffff, 0px 0px 2px #ffffff, 0px 0px 2px #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Tooltip customization */
+#visualization2 canvas {
+  cursor: pointer;
+}
