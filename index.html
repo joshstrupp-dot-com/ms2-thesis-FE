@@ -1,36 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive D3.js Visualizations</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- THREE.js libraries for 3D visualization -->
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Reading Histories: An Exploration of Books</title>
+    <meta name="description" content="An exploration of book data" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>D3.js Visualizations</h1>
+    <main>
+      <section id="intro">
+        <h1>Reading Histories</h1>
+        <p>Scroll to explore the journey through books.</p>
+      </section>
 
-    <div class="visualization-container">
-      <h2>Visualization 1</h2>
-      <div id="visualization1" class="viz"></div>
-    </div>
+      <!-- Introduction Section -->
+      <section id="scrolly-introduction" class="scrolly">
+        <article>
+          <div class="step" data-step="1">
+            <p>Introduction: Step 1</p>
+          </div>
+          <div class="step" data-step="2">
+            <p>Introduction: Step 2</p>
+          </div>
+          <div class="step" data-step="3">
+            <p>Introduction: Step 3</p>
+          </div>
+        </article>
+        <figure>
+          <svg class="visualization"></svg>
+        </figure>
+      </section>
 
-    <div class="visualization-container">
-      <h2>Visualization 2</h2>
-      <div id="visualization2" class="viz"></div>
-    </div>
+      <!-- Preface Section -->
+      <section id="scrolly-preface" class="scrolly">
+        <article>
+          <div class="step" data-step="1">
+            <p>
+              Preface: Select parameters about yourself to personalize your
+              experience
+            </p>
+          </div>
+          <div class="step" data-step="2">
+            <p>Preface: Choose the books that resonate with you</p>
+          </div>
+          <div class="step" data-step="3">
+            <p>
+              Preface: Your selections will highlight relevant books in upcoming
+              visualizations
+            </p>
+          </div>
+        </article>
+        <figure>
+          <svg class="visualization"></svg>
+        </figure>
+      </section>
 
-    <div class="visualization-container">
-      <h2>Visualization 3</h2>
-      <div id="visualization3" class="viz"></div>
-    </div>
+      <!-- Chapter 1 Section -->
+      <section id="scrolly-chapter1" class="scrolly">
+        <article>
+          <div class="step" data-step="1">
+            <p>Chapter 1: Visualization 1, Step 1</p>
+          </div>
+          <div class="step" data-step="2">
+            <p>Chapter 1: Visualization 1, Step 2</p>
+          </div>
+          <div class="step" data-step="3">
+            <p>Chapter 1: Visualization 1, Step 3</p>
+          </div>
+        </article>
+        <figure>
+          <svg class="visualization"></svg>
+        </figure>
+      </section>
 
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="visualization1.js"></script>
-    <script src="visualization2.js"></script>
-    <script src="visualization3.js"></script>
+      <!-- Chapter 2 Section -->
+      <section id="scrolly-chapter2" class="scrolly">
+        <article>
+          <div class="step" data-step="1">
+            <p>Chapter 2: Visualization 2, Step 1</p>
+          </div>
+          <div class="step" data-step="2">
+            <p>Chapter 2: Visualization 2, Step 2</p>
+          </div>
+          <div class="step" data-step="3">
+            <p>Chapter 2: Visualization 2, Step 3</p>
+          </div>
+        </article>
+        <figure>
+          <svg class="visualization"></svg>
+        </figure>
+      </section>
+
+      <!-- Chapter 3 Section -->
+      <section id="scrolly-chapter3" class="scrolly">
+        <article>
+          <div class="step" data-step="1">
+            <p>Chapter 3: Visualization 3, Step 1</p>
+          </div>
+          <div class="step" data-step="2">
+            <p>Chapter 3: Visualization 3, Step 2</p>
+          </div>
+          <div class="step" data-step="3">
+            <p>Chapter 3: Visualization 3, Step 3</p>
+          </div>
+        </article>
+        <figure>
+          <svg class="visualization"></svg>
+        </figure>
+      </section>
+
+      <!-- Epilogue Section -->
+      <section id="scrolly-epilogue" class="scrolly">
+        <article>
+          <div class="step" data-step="1">
+            <p>Epilogue: Reflecting on the journey</p>
+          </div>
+          <div class="step" data-step="2">
+            <p>Epilogue: What we've learned</p>
+          </div>
+          <div class="step" data-step="3">
+            <p>Epilogue: Where to go from here</p>
+          </div>
+        </article>
+        <figure>
+          <svg class="visualization"></svg>
+        </figure>
+      </section>
+
+      <section id="outro">
+        <h2>Thank you for exploring</h2>
+        <p>Project by [Your Name]</p>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/d3@7.8.5/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/scrollama@3.2.0/build/scrollama.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
